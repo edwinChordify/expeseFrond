@@ -20,7 +20,9 @@ function Login() {
             alert("logging in")
             console.log(registerresponse.data);
 
-            const userId = registerresponse.data.id;
+            const userId = registerresponse.data.loginUser.id;
+            console.log(userId);
+
             localStorage.setItem("userId", userId);
 
 

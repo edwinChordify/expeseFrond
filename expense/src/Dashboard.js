@@ -121,9 +121,8 @@ function Dashboard() {
 
 
         } catch (error) {
-            alert("issue")
-            console.log(error);
-
+            console.error("Error creating expense:", error); // Log the specific error
+            alert("Failed to create expense. Please check your input and try again.");
         }
 
 
